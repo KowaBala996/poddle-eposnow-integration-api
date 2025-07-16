@@ -17,7 +17,6 @@ namespace poddle.Repositories
             _config = config.Value;
             _logger = logger;
         }
-
         public async Task<TokenResponse?> GetAccessTokenAsync(string authorizationCode)
         {
             var tokenUrl = $"{_config.AuthUrl}/token";
